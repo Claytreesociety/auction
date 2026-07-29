@@ -51,9 +51,33 @@ p {
 .button:hover {
     background: #cae3cd;
 }
+
+/* NEW PHOTO SECTION */
+
+.gallery {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.small-photo {
+    width: 35%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.large-photo {
+    width: 65%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
@@ -64,13 +88,23 @@ p {
 Thank you for helping Clay Tree Society Raise the Roof!
 </p>
 
-</p>
+<p>
 Please click the button below to view the complete auction catalogue.
 </p>
 
 <a class="button" href="Auction Catalogue_compressed-1.pdf" target="_blank">
 View Auction Catalogue
 </a>
+
+<!-- NEW PHOTO SECTION -->
+
+<div class="gallery">
+
+    <img src="icon.png" class="small-photo" alt="Auction Photo">
+
+    <img src="group.png" class="large-photo" alt="Clay Tree Society Photo">
+
+</div>
 
 </div>
 
