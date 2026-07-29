@@ -52,28 +52,19 @@ p {
     background: #cae3cd;
 }
 
-/* NEW PHOTO SECTION */
-
-.gallery {
+.catalogue-image {
+    display: block;
+    width: 100%;
     margin-top: 40px;
-    display: flex;
-    gap: 20px;
-}
-
-.small-photo {
-    width: 35%;
-    height: 250px;
-    object-fit: cover;
     border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.large-photo {
-    width: 65%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+.catalogue-image:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
 }
-
 </style>
 
 </head>
@@ -96,15 +87,13 @@ Please click the button below to view the complete auction catalogue.
 View Auction Catalogue
 </a>
 
-<!-- NEW PHOTO SECTION -->
-
-<div class="gallery">
-
-    <img src="icon.png" class="small-photo" alt="Auction Photo">
-
-    <img src="group.png" class="large-photo" alt="Clay Tree Society Photo">
-
-</div>
+<a href="Auction Catalogue_compressed-1.pdf" target="_blank">
+    <img
+        src="photo.png"
+        alt="View Auction Catalogue"
+        class="catalogue-image"
+    >
+</a>
 
 </div>
 
